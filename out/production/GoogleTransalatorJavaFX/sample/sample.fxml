@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
+            prefWidth="1000.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane layoutX="93.0" layoutY="33.0" prefHeight="60.0" prefWidth="700.0"
+                    style="-fx-background-color: #5A48D9; -fx-background-radius: 30px;" AnchorPane.leftAnchor="93.0"
+                    AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="33.0">
+            <children>
+                <ComboBox fx:id="drpToCountry" layoutX="560.0" layoutY="18.0" prefWidth="150.0"
+                          promptText="Select Language"
+                          style="-fx-background-color: #5A48D9; -fx-background-radius: 30px; -fx-text-fill: #FFFFFF;"
+                          AnchorPane.leftAnchor="560.0"/>
+                <ComboBox fx:id="drpFromCountry" layoutX="102.0" layoutY="18.0" prefWidth="150.0"
+                          promptText="Select Language"
+                          style="-fx-background-color: #5A48D9; -fx-background-radius: 30px; -fx-text-fill: #FFFFFF;"
+                          AnchorPane.rightAnchor="563.0"/>
+                <ImageView fx:id="btnSwap" fitHeight="35.0" fitWidth="35.0" layoutX="390.0" layoutY="13.0"
+                           onMouseClicked="#swap" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@swap.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="514.0" layoutY="125.0" prefHeight="450.0" prefWidth="450.0"
+                    style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;" AnchorPane.bottomAnchor="75.0"
+                    AnchorPane.leftAnchor="514.0" AnchorPane.topAnchor="125.0">
+            <children>
+                <TextField fx:id="inpTo" layoutX="146.0" layoutY="176.0" onAction="#translate"
+                           style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="Berlin Sans FB Bold" size="25.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="50.0" layoutY="125.0" prefHeight="450.0" prefWidth="450.0"
+                    style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;" AnchorPane.bottomAnchor="75.0"
+                    AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="125.0">
+            <children>
+                <TextField fx:id="inpFrom" layoutX="56.0" layoutY="159.0" onAction="#translate"
+                           style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="Berlin Sans FB Bold" size="25.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="68.0" layoutY="586.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@copy.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="514.0" layoutY="586.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@copy.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="btnCopyFromText" layoutX="118.0" layoutY="601.0" onMouseClicked="#copyText"
+               text="Copy Text To Clipboard">
+            <font>
+                <Font name="Berlin Sans FB" size="18.0"/>
+            </font>
+        </Label>
+        <Label fx:id="btnCopyToText" layoutX="564.0" layoutY="601.0" onMouseClicked="#copyText"
+               text="Copy Text To Clipboard">
+            <font>
+                <Font name="Berlin Sans FB" size="18.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

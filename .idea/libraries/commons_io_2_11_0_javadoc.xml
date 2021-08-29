@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="commons-io-2.11.0-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/externalJars/commons-io-2.11.0-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalJars/commons-io-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalJars/gson-2.8.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalJars/jackson-annotations-2.12.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalJars/jackson-core-2.12.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalJars/jackson-databind-2.12.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/externalJars/commons-io-2.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/externalJars/commons-io-2.11.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/externalJars/commons-io-2.11.0-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
